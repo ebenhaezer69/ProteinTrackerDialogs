@@ -15,28 +15,27 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.test);
 
         Button helpBtn = (Button) findViewById(R.id.helpButton);
         helpBtn.setOnClickListener(helpButtonListener);
 
         TextView textView = (TextView) findViewById(R.id.mainActivityTextView);
-        textView.setText(R.string.test_untuk_update_view);
+        //Button myBtn = (Button) findViewById(R.id.button1);
+
+        //textView.setText(R.string.test_untuk_update_view);
+        /*myBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText myEditText = (EditText) findViewById(R.id.editText1);
+                Log.d("Proteintracker", myEditText.getText().toString());
+            }
+        });*/
 
         if (savedInstanceState != null) {
             Log.d("ProteinTracker", savedInstanceState.getString("abc"));
         }
-
-        Button myBtn = (Button) findViewById(R.id.button1);
-        myBtn.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view) {
-                EditText myEditText = (EditText)findViewById(R.id.editText1);
-                Log.d("Proteintracker",myEditText.getText().toString());
-            }
-        });
-        }
+    }
 
     private View.OnClickListener helpButtonListener = new View.OnClickListener()
     {
