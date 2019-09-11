@@ -15,22 +15,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test);
+        setContentView(R.layout.activity_main);
 
         Button helpBtn = (Button) findViewById(R.id.helpButton);
         helpBtn.setOnClickListener(helpButtonListener);
 
         TextView textView = (TextView) findViewById(R.id.mainActivityTextView);
-        //Button myBtn = (Button) findViewById(R.id.button1);
+        Button myBtn = (Button) findViewById(R.id.button1);
 
-        //textView.setText(R.string.test_untuk_update_view);
-        /*myBtn.setOnClickListener(new View.OnClickListener() {
+        textView.setText(R.string.test_untuk_update_view);
+        myBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditText myEditText = (EditText) findViewById(R.id.editText1);
                 Log.d("Proteintracker", myEditText.getText().toString());
             }
-        });*/
+        });
 
         if (savedInstanceState != null) {
             Log.d("ProteinTracker", savedInstanceState.getString("abc"));
@@ -57,6 +57,12 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("abc","test");
         super.onSaveInstanceState(outState);
     }
+
+    public void GoToFragment(View view) {
+        Intent intent = new Intent(MainActivity.this, Main2FragmentActivity.class);
+        startActivity(intent);
+    }
+
 }
 
 
