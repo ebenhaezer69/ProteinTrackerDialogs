@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -63,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void GoToMahasiswa1(View view) {
+        Intent intent = new Intent(MainActivity.this, Mahasiswa1Activity.class);
+        startActivity(intent);
+    }
 }
 
 

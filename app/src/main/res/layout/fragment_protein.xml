@@ -11,6 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/txtNamaFragment"
+            android:layout_width="286dp"
+            android:layout_height="414dp"
+            android:text="@string/hello_blank_fragment"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="273dp" />
+
         <Button
             android:id="@+id/btnFragment1"
             android:layout_width="wrap_content"
@@ -21,14 +29,6 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/txtNamaFragment" />
-
-        <TextView
-            android:id="@+id/txtNamaFragment"
-            android:layout_width="286dp"
-            android:layout_height="414dp"
-            android:text="@string/hello_blank_fragment"
-            tools:layout_editor_absoluteX="62dp"
-            tools:layout_editor_absoluteY="273dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

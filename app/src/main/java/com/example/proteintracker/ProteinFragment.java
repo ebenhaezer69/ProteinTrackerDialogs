@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -80,7 +81,7 @@ public class ProteinFragment extends Fragment {
         Button btnPassData = (Button) view.findViewById(R.id.btnFragment1);
         btnPassData.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 sm.SendData("Nice");
             }
         });

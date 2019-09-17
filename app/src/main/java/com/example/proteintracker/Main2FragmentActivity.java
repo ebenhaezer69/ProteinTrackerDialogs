@@ -1,7 +1,6 @@
 package com.example.proteintracker;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
@@ -30,7 +29,7 @@ public class Main2FragmentActivity extends AppCompatActivity implements ProteinF
     @Override
     public void SendData(String Message) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ProteinFragment protein2Fragment = ProteinFragment.newInstance(Message,"Para Progmobers");
+        Protein2Fragment protein2Fragment = Protein2Fragment.newInstance(Message,"Para Progmobers");
         ft.replace(R.id.frameMain,protein2Fragment);
         ft.commit();
     }
