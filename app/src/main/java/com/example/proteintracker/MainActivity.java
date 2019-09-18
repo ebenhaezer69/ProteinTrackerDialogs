@@ -68,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, Mahasiswa1Activity.class);
         startActivity(intent);
     }
+
+    public void GoToList(View view) {
+        Intent intent = new Intent(MainActivity.this, ListActivity.class);
+        startActivity(intent);
+    }
 }
 
 
