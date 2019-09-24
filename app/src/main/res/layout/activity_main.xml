@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/mainActivityTextView"
-        android:layout_width="302dp"
-        android:layout_height="382dp"
+        android:layout_width="307dp"
+        android:layout_height="412dp"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -105,5 +105,16 @@
         android:text="List"
         app:layout_constraintStart_toEndOf="@+id/btnMahasiswa"
         app:layout_constraintTop_toBottomOf="@+id/btnFragment" />
+
+    <Button
+        android:id="@+id/lvMhs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="GoToLvMhs"
+        android:text="List Mahasiswa"
+        app:layout_constraintBottom_toBottomOf="@+id/mainActivityTextView"
+        app:layout_constraintEnd_toEndOf="@+id/mainActivityTextView"
+        app:layout_constraintStart_toStartOf="@+id/mainActivityTextView"
+        app:layout_constraintTop_toBottomOf="@+id/btnMahasiswa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

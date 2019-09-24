@@ -73,6 +73,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, ListActivity.class);
         startActivity(intent);
     }
+
+    public void GoToLvMhs(View view) {
+        Intent intent = new Intent(MainActivity.this, ListMahasiswaActivity.class);
+        startActivity(intent);
+    }
 }
 
 
