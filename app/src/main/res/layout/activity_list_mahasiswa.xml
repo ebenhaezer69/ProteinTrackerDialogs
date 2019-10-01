@@ -6,18 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ListMahasiswaActivity">
 
-    <ListView
-        android:id="@+id/lvMhs"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/mhsSpinner"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcDataMhs"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.397" />
+        app:layout_constraintTop_toBottomOf="@+id/mhsSpinner"
+        app:layout_constraintVertical_bias="0.123" />
 
     <Spinner
         android:id="@+id/mhsSpinner"
@@ -33,23 +31,21 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="393dp"
-        android:layout_height="307dp"
-        android:layout_marginEnd="1dp"
+        android:layout_width="360dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <Button
             android:id="@+id/btnCreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="236dp"
-            android:text="New"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="8dp"
             android:onClick="GoToCreate"
-            app:layout_constraintEnd_toStartOf="@+id/btnUpdate"
-            app:layout_constraintHorizontal_bias="0.29"
+            android:text="New"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,22 +53,22 @@
             android:id="@+id/btnUpdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="236dp"
-            android:layout_marginEnd="36dp"
-            android:text="Edit"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="13dp"
             android:onClick="GoToUpdate"
-            app:layout_constraintEnd_toStartOf="@+id/btnDelete"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:text="Edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCreate" />
 
         <Button
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="236dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="11dp"
             android:text="Delete"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnUpdate" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
