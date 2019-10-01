@@ -33,10 +33,19 @@ public class RecycleViewActivity extends AppCompatActivity {
 
     private void addData(){
         mahasiswaArrayList = new ArrayList<>();
-        mahasiswaArrayList.add(new Mahasiswa("Eben Haezer G","72160071","081273724898"));
-        /*​mahasiswaArrayList.add(new Mahasiswa("Libra Dohko","71160089","02188795"));*/
-        mahasiswaArrayList.add(new Mahasiswa("Aries Mu","123456887","098758124"));
-        mahasiswaArrayList.add(new Mahasiswa("Gemini Saga","1414370309","123456789"));
+        mahasiswaArrayList.add(new Mahasiswa("Scorpio Milo", "1414370309", "123456789"));
+        mahasiswaArrayList.add(new Mahasiswa("Sagitarius Aoilos", "1214234560", "987654321"));
+        mahasiswaArrayList.add(new Mahasiswa("Libra Dohk", "1214230345", "987648765"));
+        mahasiswaArrayList.add(new Mahasiswa("Aries Mu", "1214378098", "098758124"));
+        mahasiswaArrayList.add(new Mahasiswa("Gemini Saga", "1414370309", "123456789"));
+        mahasiswaArrayList.add(new Mahasiswa("Aquarius Camus", "1214234560", "987654321"));
+        mahasiswaArrayList.add(new Mahasiswa("Cancer Deathmask", "1214230345", "987648765"));
+        mahasiswaArrayList.add(new Mahasiswa("Leo Aiolia", "1214378098", "098758124"));
+        mahasiswaArrayList.add(new Mahasiswa("Virgo Shaka", "1414370309", "123456789"));
+        mahasiswaArrayList.add(new Mahasiswa("Taurus Aldebaran", "1214234560", "987654321"));
+        mahasiswaArrayList.add(new Mahasiswa("Pisces Aphrodite", "1214230345", "987648765"));
+        mahasiswaArrayList.add(new Mahasiswa("Pisces Aphrodite", "1214230345", "987648765"));
+        mahasiswaArrayList.add(new Mahasiswa("Capricorn Shura", "1214378098", "098758124"));
     }
 }
 
