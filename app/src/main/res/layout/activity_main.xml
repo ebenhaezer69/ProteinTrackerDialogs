@@ -114,7 +114,20 @@
         android:text="List Mahasiswa"
         app:layout_constraintBottom_toBottomOf="@+id/mainActivityTextView"
         app:layout_constraintEnd_toEndOf="@+id/mainActivityTextView"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="@+id/mainActivityTextView"
-        app:layout_constraintTop_toBottomOf="@+id/btnMahasiswa" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMahasiswa"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Recycler"
+        android:onClick="GoToRecycler"
+        app:layout_constraintStart_toEndOf="@+id/lvMhs"
+        app:layout_constraintTop_toBottomOf="@+id/btnList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

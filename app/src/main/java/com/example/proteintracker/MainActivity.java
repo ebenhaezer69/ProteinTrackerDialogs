@@ -78,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, ListMahasiswaActivity.class);
         startActivity(intent);
     }
+
+    public void GoToRecycler(View view) {
+        Intent intent = new Intent(MainActivity.this, RecycleViewActivity.class);
+        startActivity(intent);
+    }
 }
 
 
