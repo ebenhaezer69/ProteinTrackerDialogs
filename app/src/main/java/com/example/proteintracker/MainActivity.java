@@ -83,6 +83,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, RecycleViewActivity.class);
         startActivity(intent);
     }
+
+    public void GoToDialogs(View view) {
+        Intent intent = new Intent(MainActivity.this, DialogsActivity.class);
+        startActivity(intent);
+    }
 }
 
 

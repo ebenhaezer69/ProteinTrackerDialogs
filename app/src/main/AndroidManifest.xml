@@ -9,12 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InClassRecyclerActivity">
-
-        </activity>
-        <activity android:name=".RecycleViewActivity">
-
-        </activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity
+            android:name=".SettingsTestActivity"
+            android:label="@string/title_activity_settings_test" />
+        <activity
+            android:name=".SettingsProteinTrackerActivity"
+            android:label="@string/title_activity_settings_protein_tracker" />
+        <activity android:name=".DialogsActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".InClassRecyclerActivity" />
+        <activity android:name=".RecycleViewActivity" />
         <activity android:name=".UpdateMhsActivity" />
         <activity android:name=".CreateMhsActivity" />
         <activity android:name=".ListMahasiswaActivity" />
